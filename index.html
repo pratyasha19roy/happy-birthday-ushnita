@@ -10,7 +10,7 @@
 
     body {
         font-family: 'Courier New', monospace;
-        background: linear-gradient(135deg, #fff7ad 0%, #ffed7b 100%);
+        background: linear-gradient(135deg, #ffe4f0 0%, #ffb6d9 100%);
         min-height: 100vh;
         display: flex;
         justify-content: center;
@@ -193,7 +193,7 @@
     </div>
 
         <div class="name-title" id="nameTitle">
-            <span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span><span>G</span><span>H</span>
+            <span>U</span><span>S</span><span>H</span><span>N</span><span>I</span><span>T</span><span>A</span>
         </div>
 
         <div class="song-title" id="songTitle">Soch Na Sake</div>
@@ -243,26 +243,17 @@
 
 <script>
 const playlist = [
-    "MRtRcTfszjY", "FJ55SHCzt88", "vwsWXUGLRts", "wqgUzLHgNMI",
-    "6vXG7JOYfn8", "CNZMIhckaA0", "7NLfpsNHmZI", "fbdxYoFb64g"
+    "89KF9qgW3Aw&list=RD89KF9qgW3Aw&start_radio=1", "WRSeV_27z6k&list=RDWRSeV_27z6k&start_radio=1", "XgdY_s1LsZc&list=RDXgdY_s1LsZc&start_radio=1", "6MgsHSAcI9k&list=RD6MgsHSAcI9k&start_radio=1",
+    "M03GOY5eINg&list=RDM03GOY5eINg&start_radio=1", "o1RducJbUdc&list=RDo1RducJbUdc&start_radio=1", "CCbhNA7YiJ4&list=RDCCbhNA7YiJ4&start_radio=1", 
 ];
 
 const songNames = [
-    "Soch Na Sake", "Humdard", "Amar Mawte (আমার মতে)",
-    "Wishlist", "Mere Naam Tu", "Aaoge Jab Tum",
-    "Bhalobashar Morshum (ভালবাসার মরশুম)", "Abhi Kuch Dino Se"
+    "Uru Uru Swapne Ek Rajkonye", "Say Shava Shava", "Haule Haule",
+    "Nadaan Parinde", "It's the Time to Disco", "Tumhi Ho Bandhu",
+    "Amar Mawte"
 ];
 
-const songNotes = [
-    "Note 1",
-    "Note 2",
-    "Note 3",
-    "Note 4",
-    "Note 5",
-    "Note 6",
-    "Note 7",
-    "Note 8"
-];
+const songNote = "Your smile, your words and your voice reminds me the importance of living life. I remember you whatsapp about was 'Live before you die.' I used to wonder - isn't that the rule, we live before dying anyway, but now i understand it. You name is the synonym of life to me.";
 
 let player, currentTrack = 0, isPlaying = false;
 
@@ -290,8 +281,7 @@ function updateUI() {
     document.getElementById("songTitle").textContent =
       songNames[currentTrack];
 
-    document.getElementById("noteBox").textContent =
-      songNotes[currentTrack];
+    document.getElementById("noteBox").textContent = songNote;
 
     const spans = document.querySelectorAll("#nameTitle span");
     spans.forEach(s => s.classList.remove("active"));
